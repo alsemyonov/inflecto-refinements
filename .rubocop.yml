@@ -1,0 +1,8 @@
+Style/Documentation:
+  Exclude:
+    - 'spec/**/*'
+
+# Do not ever break my development console, RuboCop
+Lint/Debugger:
+  Exclude:
+    - 'bin/console'
