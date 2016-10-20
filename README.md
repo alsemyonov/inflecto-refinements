@@ -2,12 +2,11 @@
 
 `String` and `Numeric` refinements based on [inflecto](https://rubygems.org/gems/inflecto) gem.
 
-[![Gem Version](https://badge.fury.io/rb/inflecto-refinements.png)][gem]
-[![Build Status](https://secure.travis-ci.org/alsemyonov/inflecto-refinements.png?branch=master)][travis]
-[![Dependency Status](https://gemnasium.com/alsemyonov/inflecto-refinements.png)][gemnasium]
-[![Code Climate](https://codeclimate.com/github/alsemyonov/inflecto-refinements.png)][codeclimate]
-[![Coverage Status](https://coveralls.io/repos/alsemyonov/inflecto-refinements/badge.png?branch=master)][coveralls]
-
+[![Gem Version](https://badge.fury.io/rb/inflecto-refinements.svg)][gem]
+[![Build Status](https://secure.travis-ci.org/alsemyonov/inflecto-refinements.svg?branch=master)][travis]
+[![Dependency Status](https://gemnasium.com/alsemyonov/inflecto-refinements.svg)][gemnasium]
+[![Code Climate](https://codeclimate.com/github/alsemyonov/inflecto-refinements/badges/gpa.svg)][codeclimate]
+[![Test Coverage](https://codeclimate.com/github/alsemyonov/inflecto-refinements/badges/coverage.svg)][coverage]
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -71,4 +70,4 @@ The gem is available as open source under the terms of the [MIT License](http://
 [travis]: https://travis-ci.org/alsemyonov/inflecto-refinements
 [gemnasium]: https://gemnasium.com/alsemyonov/inflecto-refinements
 [codeclimate]: https://codeclimate.com/github/alsemyonov/inflecto-refinements
-[coveralls]: https://coveralls.io/r/alsemyonov/inflecto-refinements
+[coverage]: https://codeclimate.com/github/alsemyonov/inflecto-refinements/coverage
