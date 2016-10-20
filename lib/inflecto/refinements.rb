@@ -2,10 +2,29 @@ require 'inflecto/refinements/version'
 require 'inflecto'
 
 module Inflecto
-  # Refines {String} with inflection methods and {Numeric} with {#ordinalize}
+  # Refines `String` with inflection methods and `Numeric` with `#ordinalize`
   #
   # @author Alex Semyonov <alex@semyonov.us>
+  #
   # @since 0.1.0
+  #
+  # @example
+  #   require 'inflecto-refinements'
+  #   using Inflecto::Refinements
+  #
+  #   'data_mapper'.camelize            #=> 'DataMapper'
+  #   'data.mapper'.classify            #=> 'DataMapper'
+  #   'DataMapper'.constantize          #=> DataMapper
+  #   'data_mapper_rspec'.dasherize     #=> 'data-mapper-rspec'
+  #   'DataMapper::Inflecto'.demodulize #=> 'Inflecto'
+  #   'Message'.foreign_key             #=> 'message_id'
+  #   'employee_salary'.humanize        #=> 'Employee salary'
+  #   'sample'.pluralize                #=> 'samples'
+  #   'forums'.singularize              #=> 'forum'
+  #   'news'.singularize                #=> 'news'
+  #   'fancy_category'.tableize         #=> 'fancy_categories'
+  #   'DataMapper'.underscore           #=> 'data_mapper'
+  #   1.ordinalize                      #=> '1st'
   module Refinements
     refine String do
       # Convert self to UpperCamelCase

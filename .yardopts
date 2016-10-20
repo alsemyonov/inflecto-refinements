@@ -1,0 +1,6 @@
+--title 'inflecto-refinements: String & Numeric refinements'
+--markup markdown
+--markup-provider redcarpet
+lib/**/*.rb
+-
+README.md
