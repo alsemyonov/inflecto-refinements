@@ -1,0 +1,8 @@
+SimpleCov.start do
+  add_filter '/bin/'
+  add_filter '/spec/'
+  add_group('Missing') { |src| src.covered_percent < 100 }
+  add_group('Covered') { |src| src.covered_percent == 100 }
+end
+require 'codeclimate-test-reporter'
+CodeClimate::TestReporter.start
