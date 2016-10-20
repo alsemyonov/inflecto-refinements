@@ -2,11 +2,16 @@ require 'inflecto/refinements/version'
 require 'inflecto'
 
 module Inflecto
+  # Refines {String} with inflection methods and {Numeric} with {#ordinalize}
+  #
+  # @author Alex Semyonov <alex@semyonov.us>
+  # @since 0.1.0
   module Refinements
     refine String do
       # Convert self to UpperCamelCase
       #
-      # Will also convert '/' to '::' which is useful for converting paths to namespaces.
+      # Will also convert '/' to '::' which is useful for converting paths
+      # to namespaces.
       #
       # @example
       #   "data_mapper".camelize        # => "DataMapper"
@@ -65,7 +70,8 @@ module Inflecto
 
       # Find a constant with the name specified in the argument string
       #
-      # The name is assumed to be the one of a top-level constant, constant scope of caller is ignored
+      # The name is assumed to be the one of a top-level constant, constant
+      # scope of caller is ignored
       #
       # @example
       #
@@ -109,7 +115,8 @@ module Inflecto
 
       # Humanize string
       #
-      # capitalizes the first word and turns underscores into spaces and strips a # trailing "_id", if any.
+      # capitalizes the first word and turns underscores into spaces and strips
+      # a # trailing "_id", if any.
       # Like +titleize+, this is meant for creating pretty output.
       #
       # @example
@@ -125,7 +132,8 @@ module Inflecto
       # Tableize string
       #
       # Create the name of a table like Rails does for models to table names.
-      # This method # uses the +pluralize+ method on the last word in the string.
+      # This method # uses the +pluralize+ method on the last word in
+      # the string.
       #
       # @example
       #
@@ -140,7 +148,8 @@ module Inflecto
 
       # Classify self
       #
-      # Create a class name from a plural table name like Rails does for table names to models.
+      # Create a class name from a plural table name like Rails does for
+      # table names to models.
       # Note that this returns a string and not a Class.
       #
       # To convert to an actual class # follow +classify+ with +constantize+.

@@ -1,8 +1,18 @@
-Style/Documentation:
+AllCops:
   Exclude:
-    - 'spec/**/*'
+  - 'spec/**/*'
+
+# RuboCop, ignore refinement blocks
+Metrics/BlockLength:
+  Exclude:
+  - 'lib/inflecto/refinements.rb'
 
 # Do not ever break my development console, RuboCop
 Lint/Debugger:
   Exclude:
-    - 'bin/console'
+  - 'bin/console'
+
+# RuboCop, let Bundler require this gem for me if needed
+Style/FileName:
+  Exclude:
+  - 'lib/inflecto-refinements.rb'
