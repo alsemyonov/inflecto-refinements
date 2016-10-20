@@ -185,19 +185,6 @@ module Inflecto
       def classify
         Inflecto.classify(self)
       end
-
-      # Test if word is uncountable
-      #
-      # @example
-      #
-      #   'rice'.uncountable? #=> true
-      #   'apple'.uncountable? #=> false
-      #
-      # @return [Boolean]
-      #   true, if word is uncountable
-      def uncountable?
-        Inflecto.uncountable?(self)
-      end
     end
 
     refine Numeric do

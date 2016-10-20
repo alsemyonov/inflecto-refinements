@@ -154,11 +154,10 @@ RSpec.describe String, '.pluralize' do
     'house'        => 'houses',
     'portfolio'    => 'portfolios',
     'matrix_fu'    => 'matrix_fus',
-    'axis'         => 'axes',
     'shoe'         => 'shoes',
     'horse'        => 'horses',
     'edge'         => 'edges',
-    'cow'          => 'kine',
+    'cow'          => 'kine'
   }
 
   # Missing rule or exception?

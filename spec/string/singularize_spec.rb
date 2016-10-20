@@ -129,7 +129,7 @@ RSpec.describe String, '.singularize' do
   }
 
   # Missing exceptions or missing rules?
-  PENDING = {
+  PENDING_PLURAL_TO_SINGULAR = {
     'cacti'     => 'cactus',
     'cactuses'  => 'cactus',
     'thesauri'  => 'thesaurus',
@@ -143,7 +143,7 @@ RSpec.describe String, '.singularize' do
     'postgres'  => 'postgres'
   }
 
-  PENDING.each do |plural, singular|
+  PENDING_PLURAL_TO_SINGULAR.each do |plural, singular|
     pending "missing rule or exception for #{plural} => #{singular}"
   end
 
