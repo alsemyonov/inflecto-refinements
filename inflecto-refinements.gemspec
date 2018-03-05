@@ -1,5 +1,5 @@
-# coding: utf-8
-lib = File.expand_path('../lib', __FILE__)
+
+lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'inflecto/refinements/version'
 
@@ -24,12 +24,12 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency 'inflecto', '~> 0.0.2'
 
   spec.add_development_dependency 'bundler', '~> 1.13'
-  spec.add_development_dependency 'rake', '~> 10.0'
-  spec.add_development_dependency 'rspec', '~> 3.0'
-  spec.add_development_dependency 'pry', '~> 0.10.4'
-  spec.add_development_dependency 'rubocop', '~> 0.44.1'
-  spec.add_development_dependency 'simplecov', '~> 0.12.0'
   spec.add_development_dependency 'codeclimate-test-reporter', '~> 0.6.0'
-  spec.add_development_dependency 'yard', '~> 0.9.5'
+  spec.add_development_dependency 'pry', '~> 0.10.4'
+  spec.add_development_dependency 'rake', '~> 10.0'
   spec.add_development_dependency 'redcarpet', '~> 3.3.4'
+  spec.add_development_dependency 'rspec', '~> 3.0'
+  spec.add_development_dependency 'rubocop', '~> 0.53.0'
+  spec.add_development_dependency 'simplecov', '~> 0.12.0'
+  spec.add_development_dependency 'yard', '~> 0.9.5'
 end
